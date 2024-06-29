@@ -1,0 +1,16 @@
+---
+import Image from "astro/components/Image.astro";
+import logo from "../assets/images/logo.svg";
+---
+
+<nav
+  class="p-2 flex justify-between items-center fixed top-0 z-10 bg-white w-full dark:bg-zinc-950 dark:text-white"
+>
+  <div
+    class="text-xs lg:text-sm font-normal px-2 py-[2px] inline-block rounded-md"
+    role="button"
+  >
+    🧭 My Portfolio
+  </div>
+  <Image src={logo} alt="Logo" class="inline-block w-6 h-6" />
+</nav>

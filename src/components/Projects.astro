@@ -1,0 +1,95 @@
+---
+import Youtube from "../assets/icons/Youtube.astro";
+---
+
+<section class="container mx-auto px-4 flex flex-col gap-5 mt-5">
+  <h1 class="text-2xl font-semibold">🚀 Projects</h1>
+  <div class="cards__container">
+    <div
+      class="card border p-5 flex flex-col gap-2 rounded-lg bg-[#F9F5F1] dark:bg-slate-800 border-b-2 dark:border-slate-600"
+    >
+      <div class="card__header">
+        <span
+          class="w-12 h-12 flex justify-center items-center bg-gradient-to-r from-blue-600 to-violet-600 rounded-md"
+          >🔥</span
+        >
+      </div>
+      <div class="card__body">
+        <h2 class="text-lg font-semibold hover:underline cursor-pointer">
+          <a href="https://reporta.zapopan.gob.mx/" target="_blank">
+            ReportApp 🔗
+          </a>
+        </h2>
+        <p class="text-gray-500 dark:text-gray-300 text-sm">
+          A simple blog application built with Laravel. It allows users to
+          create, read, update, and delete posts.
+        </p>
+      </div>
+      <div class="card__footer text-xs flex flex-wrap mt-2 gap-1">
+        <span
+          class="bg-zinc-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-slate-700 dark:text-slate-400 border border-slate-300 dark:border-slate-500 text-nowrap"
+          >Laravel</span
+        >
+
+        <span
+          class="bg-zinc-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-slate-700 dark:text-slate-400 border border-slate-300 dark:border-slate-500 text-nowrap"
+          >PHP</span
+        >
+
+        <span
+          class="bg-zinc-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-slate-700 dark:text-slate-400 border border-slate-300 dark:border-slate-500 text-nowrap"
+          >Daisy UI</span
+        >
+        <span
+          class="bg-zinc-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-slate-700 dark:text-slate-400 border border-slate-300 dark:border-slate-500 text-nowrap"
+          >Mysql</span
+        >
+      </div>
+    </div>
+    <div
+      class="card border p-5 flex flex-col gap-2 rounded-lg bg-[#F9F5F1] dark:bg-slate-800 border-b-2 dark:border-slate-600"
+    >
+      <div class="card__header">
+        <span
+          class="w-12 h-12 flex justify-center items-center bg-gradient-to-r from-rose-500 to-red-500 rounded-md"
+          ><Youtube />
+        </span>
+      </div>
+      <div class="card__body">
+        <h2 class="text-lg font-semibold hover:underline cursor-pointer">
+          <a href="https://reporta.zapopan.gob.mx/" target="_blank">
+            Yutu music downloader 🔗
+          </a>
+        </h2>
+        <p class="text-gray-500 dark:text-gray-300 text-sm">
+          Is your ultimate tool for quickly and easily downloading music from
+          YouTube.
+        </p>
+      </div>
+      <div class="card__footer text-xs flex flex-wrap mt-2 gap-1">
+        <span
+          class="bg-zinc-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-slate-700 dark:text-slate-400 border border-slate-300 dark:border-slate-500 text-nowrap"
+          >Laravel</span
+        >
+
+        <span
+          class="bg-zinc-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-slate-700 dark:text-slate-400 border border-slate-300 dark:border-slate-500 text-nowrap"
+          >PHP</span
+        >
+
+        <span
+          class="bg-zinc-100 text-slate-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-slate-700 dark:text-slate-400 border border-slate-300 dark:border-slate-500 text-nowrap"
+          >Tailwind CSS</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .cards__container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+  </style>
+</section>

@@ -1,0 +1,24 @@
+---
+import Image from "astro/components/Image.astro";
+import cinthia from "../assets/images/cinthia.jpg";
+import Space from "../assets/icons/Space.astro";
+import Line from "../assets/icons/Line.astro";
+---
+
+<header
+  class="w-full h-60 flex items-center justify-center border dark:border-zinc-950 relative overflow-hidden"
+>
+  <Image
+    src={cinthia}
+    width={cinthia.width}
+    class="object-cover object-center w-full h-full absolute"
+    loading="lazy"
+    alt="Background image of mac"
+  />
+  <Space
+    className="absolute left-4 lg:left-[65%] top-12 fade-in delay-1000ms text-zinc-950"
+  />
+  <Line
+    className="absolute left-[75%] top-24 fade-in delay-1500ms text-zinc-950"
+  />
+</header>
