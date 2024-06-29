@@ -2,6 +2,7 @@
 import Linkedin from "../assets/icons/Linkedin.astro";
 import Github from "../assets/icons/Github.astro";
 import Phone from "../assets/icons/Phone.astro";
+import Downloader from "../assets/icons/Downloader.astro";
 
 const SOCIAL = [
   {
@@ -16,11 +17,16 @@ const SOCIAL = [
     href: "tel:3931072706",
     Icon: Phone,
   },
+  {
+    href: "https://drive.google.com/file/d/1n91TalMh4O47QZDrr9Y8busTyRgNlSVf/view?usp=sharing",
+    Icon: Downloader,
+  },
 ];
 ---
 
 <div
-  class="rounded-lg bg-[#F9F5F1] dark:bg-slate-700 inset-x-0 fixed mx-auto content-center w-[75%] max-w-72 px-2 py-1 bottom-0 mb-5 flex items-center justify-between fade-in delay-2000ms shadow bg-opacity-75 backdrop-blur-lg"
+  id="dock"
+  class="rounded-lg bg-[#F9F5F1] dark:bg-slate-700 inset-x-0 fixed mx-auto content-center w-auto max-w-72 md:max-w-80 px-2 py-1 bottom-0 mb-5 flex items-center justify-between fade-in delay-2000ms shadow bg-opacity-70 backdrop-blur-md"
 >
   <div class="social-container flex gap-2">
     {
@@ -29,7 +35,7 @@ const SOCIAL = [
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          class="w-12 h-12 border-b-2 dark:border-slate-600 bg-[#F9F5F1] dark:bg-slate-800 rounded-lg flex items-center justify-center transition-transform ease-in-out duration-200 hover:translate-y-[-8px]"
+          class="w-11 h-11 md:w-12 md:h-12 border-b-2 dark:border-slate-600 bg-[#F9F5F1] dark:bg-slate-800 rounded-lg flex items-center justify-center transition-transform ease-in-out duration-200 hover:translate-y-[-8px]"
         >
           <Icon />
         </a>
@@ -51,6 +57,24 @@ const SOCIAL = [
 <script>
   const themeToggleLightIcon = document.getElementById("themeToggleLightIcon");
   const themeToggleDarkIcon = document.getElementById("themeToggleDarkIcon");
+  const dock = document.getElementById("dock");
+  let lastScrollTop = 0;
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = document.documentElement.scrollTop;
+
+    dock.classList.remove("delay-2000ms");
+    dock.classList.add("delay-200ms");
+
+    if (scrollTop > lastScrollTop) {
+      dock.classList.remove("fade-in");
+      dock.classList.add("fade-out");
+    } else {
+      dock.classList.remove("fade-out");
+      dock.classList.add("fade-in");
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
 
   if (
     localStorage.getItem("color-theme") === "dark" ||

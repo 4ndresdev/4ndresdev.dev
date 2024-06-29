@@ -34,6 +34,10 @@ const { title } = Astro.props;
     box-sizing: border-box;
   }
 
+  .delay-200ms {
+    --fade-in-delay: 0.2s;
+  }
+
   .delay-500ms {
     --fade-in-delay: 0.5s;
   }
@@ -53,16 +57,28 @@ const { title } = Astro.props;
   .fade-in {
     opacity: 0;
     transform: translateY(50px);
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 0.2s forwards ease-in-out;
     animation-delay: var(--fade-in-delay, 0s);
-    animation-timing-function: ease-in-out;
-    animation-duration: 0.3s;
+  }
+
+  .fade-out {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeOut 0.2s forwards ease-in-out;
+    animation-delay: var(--fade-in-delay, 0s);
   }
 
   @keyframes fadeIn {
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateY(50px);
     }
   }
 </style>
