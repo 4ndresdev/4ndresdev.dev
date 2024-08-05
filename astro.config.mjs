@@ -8,5 +8,5 @@ export default defineConfig({
   },
   integrations: [tailwind()],
   site: "https://4ndresdev.github.io",
-  base: "/4ndresdev",
+  base: "/4ndresdev.dev/",
 });
