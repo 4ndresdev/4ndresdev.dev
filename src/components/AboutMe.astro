@@ -1,11 +1,9 @@
+---
+import { basics } from "@resume";
+const { aboutMe } = basics;
+---
+
 <section class="flex flex-col gap-2 mt-5">
-  <h1 class="text-2xl font-semibold">👋 About me</h1>
-  <p class="text-sm">
-    A lo largo de mi carrera, he contribuido con mi experiencia tanto en
-    proyectos a pequeña escala como en proyectos grandes, abarcando tanto el
-    desarrollo Frontend como Backend. Sin embargo, mi verdadera pasión y enfoque
-    se encuentran en el ámbito Frontend. <br /><br /> Disfruto mucho enfrentándome
-    a nuevos retos y aprendiendo continuamente. De hecho, se podría decir que esta
-    búsqueda constante de conocimiento y resolución de retos es mi hobby favorito.
-  </p>
+  <h1 class="text-xl font-semibold">👋 About me</h1>
+  <p class="text-sm" set:html={aboutMe} />
 </section>

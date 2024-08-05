@@ -1,13 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Container from "../layouts/Container.astro";
 import Header from "../components/Header.astro";
 import Breadcrumb from "../components/Breadcrumb.astro";
 import Profile from "../components/Profile.astro";
 import Dock from "../components/Dock.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Projects from "../components/Projects.astro";
+import Experience from "../components/Experience.astro";
 import Education from "../components/Education.astro";
-import Container from "../layouts/Container.astro";
 ---
 
 <Layout title="4ndresdev • Portfolio">
@@ -18,15 +19,9 @@ import Container from "../layouts/Container.astro";
       <Profile />
       <AboutMe />
       <Projects />
+      <Experience />
       <Education />
     </Container>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </main>
   <Dock />
 </Layout>

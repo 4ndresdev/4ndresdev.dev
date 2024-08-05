@@ -7,4 +7,6 @@ export default defineConfig({
     enabled: false,
   },
   integrations: [tailwind()],
+  site: "https://4ndresdev.github.io",
+  base: "/4ndresdev.dev",
 });
