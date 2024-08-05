@@ -3,6 +3,10 @@ import Image from "astro/components/Image.astro";
 import logo from "../assets/images/logo.svg";
 import Check from "../assets/icons/Check.astro";
 import BadgeCheck from "../assets/icons/BadgeCheck.astro";
+
+import { basics } from "@resume";
+const { name, summary, email } = basics;
+const { city, region, country } = basics.location;
 ---
 
 <section class="flex flex-col gap-2 mt-[-4rem]">
@@ -11,26 +15,22 @@ import BadgeCheck from "../assets/icons/BadgeCheck.astro";
   >
     <Image src={logo} alt="Profile" class="rounded-full w-full" />
     <span
-      class="absolute text-xs font-normal px-2 bg-[#F9F5F1] rounded-xl bottom-0 flex items-center gap-1 border border-black dark:bg-zinc-700"
+      class="absolute text-xs font-normal px-2 bg-[#F9F5F1] rounded-xl bottom-0 flex items-center gap-1 border border-black dark:bg-slate-700"
     >
-      <Check />
+      <Check className="w-4" />
       Open to work
     </span>
   </div>
   <h1 class="text-2xl font-extrabold flex items-center gap-1">
-    Andrés Beltrán <BadgeCheck />
+    {name}
+    <BadgeCheck />
   </h1>
-  <p class="text-sm max-w-96 inline-block">
-    🚀 Ingeniero de Software / Desarrollador Full-Stack / Apasionado por
-    Construir Software / Enfocado en el Frontend (⚛️ React js) y aprendiendo
-    Next js 🧭
-  </p>
+  <p class="text-sm max-w-96 inline-block">{summary}</p>
   <div class="inline-flex flex-col items-start">
-    <p class="text-sm inline-block">📍 Guadalajara, Jalisco. México</p>
+    <p class="text-sm inline-block">📍 {city}, {region}. {country}</p>
     <a
       href="mailto:4ndresdev@gmail.com"
-      class="text-sm text-blue-500 hover:text-blue-700"
-      >📭 4ndresdev@gmail.com</a
+      class="text-sm text-blue-500 hover:text-blue-700">📭 {email}</a
     >
   </div>
 </section>

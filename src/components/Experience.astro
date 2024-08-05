@@ -1,0 +1,150 @@
+---
+import Check from "../assets/icons/Check.astro";
+import Pencil from "../assets/icons/Pencil.astro";
+import People from "src/assets/icons/People.astro";
+import { experience } from "@resume";
+const [beliveo, zapopan, ocotlan] = experience;
+---
+
+<section id="experience" class="flex flex-col gap-5 mt-5">
+  <h1 class="text-xl font-semibold">🔰 Experience</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div
+      class="card border relative p-5 flex flex-col gap-2 rounded-lg bg-[#F9F5F1] dark:bg-slate-800 transition-colors duration-100 ease-in-out border-b-2 border-slate-800 dark:border-slate-600 cursor-pointer"
+    >
+      <Pencil className="absolute top-0 right-5 translate-y-[-47px]" />
+      <People
+        className="w-80 absolute bottom-0 right-0 translate-y-[17px] hidden md:flex text-white"
+      />
+      <div class="card__header flex items-center justify-between">
+        <div>
+          <p class="text-gray-500 dark:text-gray-300 text-sm">
+            {beliveo.company}
+          </p>
+          <h2 class="text-lg font-semibold">{beliveo.position}</h2>
+          <p class="text-gray-500 dark:text-gray-300 text-sm">
+            {beliveo.from} - {beliveo.to}
+          </p>
+        </div>
+        {
+          beliveo.to === "Current" && (
+            <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-white dark:bg-slate-700 dark:text-slate-400 border dark:border-slate-500">
+              Current
+            </span>
+          )
+        }
+      </div>
+      <div class="card_body text-sm">
+        {beliveo.description}
+        <ul class="activities mt-6">
+          {
+            beliveo.activities.map((activity) => (
+              <li class="flex items-start gap-2 mb-2">
+                <div class="w-5 h-5 min-h-5 min-w-5 rounded-full border-dashed border-2 border-slate-800 dark:border-white animate-spin flex justify-center items-center">
+                  <Check className="text-white dark:text-slate-800 hidden check" />
+                </div>
+                {activity}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+    <div class="grid grid-cols-subgrid gap-3">
+      <div
+        class="card border p-5 flex flex-col gap-2 rounded-lg bg-[#F9F5F1] dark:bg-slate-800 transition-colors duration-100 ease-in-out border-b-2 hover:border-slate-800 dark:border-slate-600 cursor-pointer"
+      >
+        <div class="card__header flex items-center justify-between">
+          <div>
+            <p class="text-gray-500 dark:text-gray-300 text-sm">
+              {zapopan.company}
+            </p>
+            <h2 class="text-lg font-semibold">{zapopan.position}</h2>
+            <p class="text-gray-500 dark:text-gray-300 text-sm">
+              {zapopan.from} - {zapopan.to}
+            </p>
+          </div>
+        </div>
+        <div class="card_body text-sm">
+          {zapopan.description}
+          <ul class="activities mt-6">
+            {
+              zapopan.activities.map((activity) => (
+                <li class="flex items-start gap-2 mb-2">
+                  <div class="w-5 h-5 min-h-5 min-w-5 rounded-full border-dashed border-2 border-slate-800 dark:border-white animate-spin flex justify-center items-center">
+                    <Check className="text-white dark:text-slate-800 hidden check" />
+                  </div>
+                  {activity}
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+      <div
+        class="card border p-5 flex flex-col gap-2 rounded-lg bg-[#F9F5F1] dark:bg-slate-800 transition-colors duration-100 ease-in-out border-b-2 hover:border-slate-800 dark:border-slate-600 cursor-pointer"
+      >
+        <div class="card__header flex items-center justify-between">
+          <div>
+            <p class="text-gray-500 dark:text-gray-300 text-sm">
+              {ocotlan.company}
+            </p>
+            <h2 class="text-lg font-semibold">{ocotlan.position}</h2>
+            <p class="text-gray-500 dark:text-gray-300 text-sm">
+              {ocotlan.from} - {ocotlan.to}
+            </p>
+          </div>
+        </div>
+        <div class="card_body text-sm">
+          {ocotlan.description}
+          <ul class="activities mt-6">
+            {
+              ocotlan.activities.map((activity) => (
+                <li class="flex items-start gap-2 mb-2">
+                  <div class="w-5 h-5 min-h-5 min-w-5 rounded-full border-dashed border-2 border-slate-800 dark:border-white animate-spin flex justify-center items-center">
+                    <Check className="text-white dark:text-slate-800 hidden check" />
+                  </div>
+                  {activity}
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const activitiesList = document.querySelectorAll(".activities li");
+
+    const handleVisibility = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const li = entry.target;
+          const div = li.querySelector("div");
+          const check = li.querySelector(".check");
+          const delay = Math.random() * 5000 + 1000;
+
+          setTimeout(() => {
+            div.classList.add("bg-slate-800");
+            div.classList.add("dark:bg-white");
+            div.classList.remove("animate-spin");
+            check.classList.remove("hidden");
+          }, delay);
+          observer.unobserve(li);
+        }
+      });
+    };
+
+    let options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 1.0,
+    };
+
+    const observer = new IntersectionObserver(handleVisibility, options);
+    activitiesList.forEach((li) => observer.observe(li));
+  });
+</script>
