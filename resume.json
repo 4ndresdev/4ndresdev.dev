@@ -1,0 +1,172 @@
+{
+  "basics": {
+    "name": "Andrés Beltrán",
+    "summary": "🚀Software Engineer / ⚙ Full-Stack Developer / ❤ Passionate About Building Software / 🧭 Focusing on Frontend (⚛️ React js) and learning Next js",
+    "image": "",
+    "email": "4ndresdev@gmail.com",
+    "phone": "+523931072706",
+    "resume": "https://drive.google.com/file/d/1n91TalMh4O47QZDrr9Y8busTyRgNlSVf/view?usp=sharing",
+    "url": "",
+    "aboutMe": "Throughout my career, I have contributed my expertise to both small and large-scale projects, encompassing both Frontend and Backend development. However, my true passion and focus lie in the Frontend realm. <br><br> I greatly enjoy tackling new challenges and continuously learning. In fact, it could be said that this constant pursuit of knowledge and problem-solving is my favorite hobby.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Guadalajara",
+      "countryCode": "MX",
+      "country": "México",
+      "region": "Jalisco"
+    }
+  },
+  "experience": [
+    {
+      "position": "Software Developer Specialist",
+      "from": "May 2022",
+      "to": "Current",
+      "company": "Beliveo",
+      "description": "At Beliveo, as a software developer specialist, I develop internal tools to improve the work of collaborators and maintain a system in PHP. I work with React JS, Material UI and Apollo Client for the frontend, and Node JS, Express JS, Apollo Server GraphQL and MySQL for the backend.",
+      "activities": [
+        "Finance module (expense registration, recurring purchases, budget management, budget history)",
+        "Creation of an innovative application to offer and request rides between colleagues (Authentication, user management, use of Google Directions, and more)",
+        "Migration of legacy tools",
+        "Gallery module",
+        "Badges module (Check-in, Check-out, and history)",
+        "Modern tree view (Migration from legacy tree view)",
+        "Support for legacy tools written in PHP",
+        "Implementation of real-time notifications with WebSocket",
+        "Implementation of unit and component tests with Jest and Cypress"
+      ]
+    },
+    {
+      "position": "Full Stack Developer",
+      "from": "Sep 2020",
+      "to": "May 2022",
+      "company": "Government of Zapopan, Jalisco",
+      "description": "At the Government of Zapopan, I worked on multiple new developments with different technologies for various departments, in addition to providing support for the city's Cadastral system. The technologies we used were: PHP, particularly with the CodeIgniter and Laravel frameworks, as well as JavaScript with jQuery and Bootstrap.",
+      "activities": [
+        "Reporting and tracking system for public services to citizens with over 300,000 reports (WhatsApp bot, authentication, PDF reports, implementation of Google Maps API, and more)",
+        "Ticketing system to provide attention and support to the cadastral department, scalable system eventually used by all my colleagues in their areas.",
+        "Maintenance of the cadastral system of Zapopan",
+        "Development of a platform with Laravel for the creation and tracking of most procedures in Zapopan.",
+        "React Native application for scanning preferential parking QR codes"
+      ]
+    },
+    {
+      "position": "Full Stack Developer",
+      "from": "Jan 2019",
+      "to": "Sep 2020",
+      "company": "Government of Ocotlán, Jalisco",
+      "description": "As a developer at the Government of Ocotlán, I was responsible for developing tools for various departments, as well as projects for the citizens. The technologies we used were: PHP, CodeIgniter, JavaScript with jQuery, and Material Design.",
+      "activities": [
+        "Human resources platform (personal data capture, contract generation, file uploading, and more)",
+        "Ocotlán Express, platform to promote local businesses",
+        "Tracking system for food package delivery during COVID times"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Basic SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "ReportApp",
+      "startDate": "",
+      "endDate": "",
+      "description": "A simple blog application built with Laravel. It allows users to create, read, update, and delete posts.",
+      "highlights": [
+        "Codeigniter4",
+        "PHP",
+        "MySQL",
+        "Daisy UI",
+        "Jquery",
+        "MPDF",
+        "Twilio"
+      ],
+      "url": "https://reporta.zapopan.gob.mx/",
+      "emoji": "🔥"
+    },
+    {
+      "name": "Yumusic downloader",
+      "startDate": "",
+      "endDate": "",
+      "description": "Is your ultimate tool for quickly and easily downloading music from YouTube. It's as simple as pasting the URL of the video and clicking",
+      "highlights": [
+        "React JS",
+        "Tailwind CSS",
+        "Node JS",
+        "Express JS",
+        "Socket.io",
+        "ytdl-core"
+      ],
+      "url": "https://github.com/4ndresdev/yt-downloader",
+      "emoji": "🎧"
+    },
+    {
+      "name": "Notaría 66",
+      "startDate": "",
+      "endDate": "",
+      "description": "Notary 66 Guadalajara offers notarial services such as company formation, powers of attorney, wills, successions and real estate sales, with a website optimized and adaptable to mobile devices.",
+      "highlights": ["React JS", "Tailwind CSS", "Framer motion"],
+      "url": "https://www.notaria66gdl.com/",
+      "emoji": "⚖️"
+    },
+    {
+      "name": "Vdigital",
+      "startDate": "",
+      "endDate": "",
+      "description": "On the Ventanilla Digital Zapopan website, you can manage municipal procedures such as cadastre, construction licenses, civil registry, electronic invoicing, and online payments quickly and easily.",
+      "highlights": ["Laravel", "Bootstrap", "Jquery", "MySQL"],
+      "url": "https://vdigital.zapopan.gob.mx/",
+      "emoji": "📕"
+    }
+  ]
+}
