@@ -151,6 +151,23 @@
       "emoji": "🎧"
     },
     {
+      "name": "MonsterGram",
+      "startDate": "",
+      "endDate": "",
+      "description": "Application for a hackathon on Halloween, allows you to create spooky images using AI and share them with your friends.",
+      "highlights": [
+        "React JS",
+        "Tailwind CSS",
+        "Realtime database",
+        "Firebase authentication",
+        "Express JS",
+        "Node JS",
+        "Replicate AI"
+      ],
+      "url": "https://monstergram-a1e47.web.app/",
+      "emoji": "🎃"
+    },
+    {
       "name": "Notaría 66",
       "startDate": "",
       "endDate": "",
