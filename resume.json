@@ -168,6 +168,21 @@
       "emoji": "🎃"
     },
     {
+      "name": "Pomo.app",
+      "startDate": "",
+      "endDate": "",
+      "description": "Pomo.app is a productivity tool that helps you stay focused and productive by using the Pomodoro Technique.",
+      "highlights": [
+        "React JS",
+        "Tailwind CSS",
+        "RxDB",
+        "React Router 6+",
+        "Framer motion"
+      ],
+      "url": "https://github.com/4ndresdev/pomo.app/",
+      "emoji": "⌛"
+    },
+    {
       "name": "Notaría 66",
       "startDate": "",
       "endDate": "",
