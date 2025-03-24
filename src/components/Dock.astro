@@ -3,6 +3,8 @@ import Linkedin from "../assets/icons/Linkedin.astro";
 import Github from "../assets/icons/Github.astro";
 import Phone from "../assets/icons/Phone.astro";
 import Downloader from "../assets/icons/Downloader.astro";
+import { basics } from "@resume";
+const { resume } = basics;
 
 const SOCIAL = [
   {
@@ -18,7 +20,7 @@ const SOCIAL = [
     Icon: Phone,
   },
   {
-    href: "https://drive.google.com/file/d/1n91TalMh4O47QZDrr9Y8busTyRgNlSVf/view?usp=sharing",
+    href: resume,
     Icon: Downloader,
   },
 ];

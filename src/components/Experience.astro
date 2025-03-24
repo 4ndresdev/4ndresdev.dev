@@ -1,8 +1,9 @@
 ---
 import Check from "../assets/icons/Check.astro";
 import Pencil from "../assets/icons/Pencil.astro";
-import People from "src/assets/icons/People.astro";
+import testImagee from "../assets/images/growing.webp";
 import { experience } from "@resume";
+import Image from "astro/components/Image.astro";
 const [beliveo, zapopan, ocotlan] = experience;
 ---
 
@@ -13,8 +14,12 @@ const [beliveo, zapopan, ocotlan] = experience;
       class="card border relative p-5 flex flex-col gap-2 rounded-lg bg-[#F9F5F1] dark:bg-slate-800 transition-colors duration-100 ease-in-out border-b-2 border-slate-800 dark:border-slate-600 cursor-pointer"
     >
       <Pencil className="absolute top-0 right-5 translate-y-[-47px]" />
-      <People
-        className="w-80 absolute bottom-0 right-0 translate-y-[17px] hidden md:flex text-white"
+      <Image
+        src={testImagee}
+        width={testImagee.width}
+        class="w-40 h-40 absolute bottom-0 right-0 translate-x-[7px]"
+        loading="lazy"
+        alt="Picture of a person drawing a line"
       />
       <div class="card__header flex items-center justify-between">
         <div>

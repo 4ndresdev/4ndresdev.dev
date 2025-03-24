@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Andrés Beltrán",
-    "summary": "🚀Software Engineer / ⚙ Full-Stack Developer / ❤ Passionate About Building Software / 🧭 Focusing on Frontend (⚛️ React js) and learning Next js",
+    "summary": "🚀Software Engineer / 🛸 Full-Stack Developer / ♥️ Passionate About Building Software / 🧭 Focusing on Frontend (⚛️ React js) and learning Next js",
     "image": "",
     "email": "4ndresdev@gmail.com",
     "phone": "+523931072706",
-    "resume": "https://drive.google.com/file/d/1n91TalMh4O47QZDrr9Y8busTyRgNlSVf/view?usp=sharing",
+    "resume": "https://drive.google.com/file/d/1HARaBgeadPhBFCIxyTm9gimfPjjE1_9e/view?usp=sharing",
     "url": "",
-    "aboutMe": "Throughout my career, I have contributed my expertise to both small and large-scale projects, encompassing both Frontend and Backend development. However, my true passion and focus lie in the Frontend realm. <br><br> I greatly enjoy tackling new challenges and continuously learning. In fact, it could be said that this constant pursuit of knowledge and problem-solving is my favorite hobby.",
+    "aboutMe": "Throughout my career, I have contributed my experience to both large-scale and small projects, covering both Frontend and Backend development. <br><br> I greatly enjoy tackling new challenges and continuously learning. In fact, it could be said that this constant pursuit of knowledge and problem-solving is my favorite hobby.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -46,8 +46,7 @@
         "Reporting and tracking system for public services to citizens with over 300,000 reports (WhatsApp bot, authentication, PDF reports, implementation of Google Maps API, and more)",
         "Ticketing system to provide attention and support to the cadastral department, scalable system eventually used by all my colleagues in their areas.",
         "Maintenance of the cadastral system of Zapopan",
-        "Development of a platform with Laravel for the creation and tracking of most procedures in Zapopan.",
-        "React Native application for scanning preferential parking QR codes"
+        "Development of a platform with Laravel for the creation and tracking of most procedures in Zapopan."
       ]
     },
     {
@@ -121,7 +120,7 @@
       "name": "ReportApp",
       "startDate": "",
       "endDate": "",
-      "description": "A simple blog application built with Laravel. It allows users to create, read, update, and delete posts.",
+      "description": "reporta.zapopan is a CRM written in Codeinigter 4 that allows receiving and channeling citizen reports to the corresponding departments.",
       "highlights": [
         "Codeigniter4",
         "PHP",
@@ -181,6 +180,49 @@
       ],
       "url": "https://github.com/4ndresdev/pomo.app",
       "emoji": "⌛"
+    },
+    {
+      "name": "Emoji finder",
+      "startDate": "",
+      "endDate": "",
+      "description": "A modern application to easily search and explore emojis, built with the latest web technologies.",
+      "highlights": ["React", "TypeScript", "Tailwind CSS"],
+      "url": "https://emoji-finder-production.up.railway.app/",
+      "emoji": "🔎"
+    },
+    {
+      "name": "Cartelix Client",
+      "startDate": "",
+      "endDate": "",
+      "description": "🚀 Cartelix Client is a frontend application built with React, TypeScript, and Vite to provide a seamless movie ticket booking experience.",
+      "highlights": [
+        "React",
+        "TypeScript",
+        "TanStack Query",
+        "React Router",
+        "Tailwind CSS",
+        "Axios",
+        "Vite"
+      ],
+      "url": "https://cartelixclient-production.up.railway.app/",
+      "emoji": "🍿"
+    },
+    {
+      "name": "Cartelix Server",
+      "startDate": "",
+      "endDate": "",
+      "description": "🚀 Cartelix Server is a backend API built with NestJS and Prisma to manage movie ticket purchases. It provides endpoints for movies, showtimes, bookings, and trending searches, using PostgreSQL as the database.",
+      "highlights": [
+        "NestJS",
+        "TypeScript",
+        "Prisma ORM",
+        "PostgreSQL",
+        "TMDB API",
+        "Resend API",
+        "Axios"
+      ],
+      "url": "https://cartelixserver-production.up.railway.app/api",
+      "emoji": "🍿"
     },
     {
       "name": "Notaría 66",
